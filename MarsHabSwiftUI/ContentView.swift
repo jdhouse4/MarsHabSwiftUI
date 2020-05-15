@@ -11,12 +11,7 @@ import SwiftUI
 struct ContentView: View {
     // MARK: - Properties
 
-    var frameworks = ["UIKit", "CoreData", "CloudKit", "SwiftUI"]
-    @State private var selectedFrameworkIndex = 0
-
-    var osTypes = ["iOS", "macOS", "tvOS", "watchOS"]
-    @State private var selectedOSTypeIndex = 0
-
+    @State private var price: Double = 0.0
 
     /// The regression data model
     let model = MarsHabitatPricer()

@@ -19,6 +19,7 @@
 		E63FD104246B2202007F18C1 /* PickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63FD100246B2202007F18C1 /* PickerViewDataSource.swift */; };
 		E63FD105246B2202007F18C1 /* SolarPanelDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63FD101246B2202007F18C1 /* SolarPanelDataSource.swift */; };
 		E63FD108246B2327007F18C1 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63FD107246B2327007F18C1 /* Feature.swift */; };
+		E6D65E0C246EF8AE00C9AAEE /* Pickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D65E0B246EF8AE00C9AAEE /* Pickers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E63FD100246B2202007F18C1 /* PickerViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewDataSource.swift; sourceTree = "<group>"; };
 		E63FD101246B2202007F18C1 /* SolarPanelDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarPanelDataSource.swift; sourceTree = "<group>"; };
 		E63FD107246B2327007F18C1 /* Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		E6D65E0B246EF8AE00C9AAEE /* Pickers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pickers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E63FD0E8246B0BFB007F18C1 /* AppDelegate.swift */,
 				E63FD0EA246B0BFB007F18C1 /* SceneDelegate.swift */,
 				E63FD0EC246B0BFB007F18C1 /* ContentView.swift */,
+				E6D65E0B246EF8AE00C9AAEE /* Pickers.swift */,
 				E63FD107246B2327007F18C1 /* Feature.swift */,
 				E63FD106246B220B007F18C1 /* Data Sources */,
 				E63FD0EE246B0BFD007F18C1 /* Assets.xcassets */,
@@ -177,6 +180,7 @@
 				E63FD103246B2202007F18C1 /* SizeDataSource.swift in Sources */,
 				E63FD0EB246B0BFB007F18C1 /* SceneDelegate.swift in Sources */,
 				E63FD0FD246B20FD007F18C1 /* MarsHabitatPricer.mlmodel in Sources */,
+				E6D65E0C246EF8AE00C9AAEE /* Pickers.swift in Sources */,
 				E63FD102246B2202007F18C1 /* GreenhousesDataSource.swift in Sources */,
 				E63FD108246B2327007F18C1 /* Feature.swift in Sources */,
 				E63FD104246B2202007F18C1 /* PickerViewDataSource.swift in Sources */,
