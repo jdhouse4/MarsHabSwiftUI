@@ -11,7 +11,15 @@ import SwiftUI
 struct ContentView: View {
     // MARK: - Properties
 
-    @State private var price: Double = 0.0
+    @State private var price: String = ""
+    @State private var solarPanels: Int = 0
+    @State private var greenhouses: Int = 0
+    @State private var size: Int        = 0
+
+    let orangeColor: Color = Color.init(red: 1.0, green: 0.6, blue: 0.0)
+
+    let pickerMinFrameHeight: CGFloat   = 400
+    let pickerMaxFrameHeight: CGFloat   = 1000
 
     /// The regression data model
     let model = MarsHabitatPricer()
@@ -23,45 +31,34 @@ struct ContentView: View {
     //@State private var feature: Feature
 
     var body: some View {
-        VStack {
-            Text("The World of Apple")
-                .font(.largeTitle)
-
-            GeometryReader { geometry in
-                HStack {
-                    Picker(selection: self.$selectedFrameworkIndex, label: Text("")) {
-                        ForEach(0 ..< self.frameworks.count) { index in
-                            Text(self.frameworks[index]).tag(index)
-                        }
-                    }
-                    .frame(width: geometry.size.width/2, height: 100, alignment: .center)
-
-                    Picker(selection: self.$selectedOSTypeIndex, label: Text("")) {
-                        ForEach(0 ..< self.osTypes.count) { index in
-                            Text(self.osTypes[index]).tag(index)
-                        }
-                    }
-                    .frame(width: geometry.size.width/2, height: 100, alignment: .center)
-                }
-                .padding()
+        VStack(spacing: 0) {
+            VStack(spacing: 0) {
+                orangeColor.edgesIgnoringSafeArea(.all)
+                Text("Mars Habitat Pricer")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.white)
             }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50, maxHeight: 60, alignment: .center)
 
-            Spacer()
+            .background(orangeColor)
 
+            Pickers(price: $price,
+                    selectedSolarPanelIndex: $solarPanels,
+                    selectedGreenhousesIndex: $greenhouses,
+                    selectedSizeIndex: $size)
+                //.frame(height: 550)
+                .frame(minHeight: self.pickerMinFrameHeight, maxHeight: self.pickerMaxFrameHeight)
+
+            /*
             // This will be abstracted to an OutputView.swift
             Text("Your favorite framework: \(self.frameworks[self.selectedFrameworkIndex])")
             Text("Your favorite OS: \(self.osTypes[self.selectedOSTypeIndex])")
             Text("Your Apple World: \(self.frameworks[self.selectedFrameworkIndex]) on \(self.osTypes[self.selectedOSTypeIndex])")
+            */
 
-            Spacer(minLength: 100)
-            /*
-             Picker(selection: $feature, label: Text("Mars Habitat Features")) {
-             let selectedRow: Int = feature.rawValue
-             let solarPanels = pickerDataSource.value(for: , feature: <#T##Feature#>)
-             }
-             */
-
+            Spacer(minLength: 50)
         }
+    //.background(Color.orange)
     }
 }
 
