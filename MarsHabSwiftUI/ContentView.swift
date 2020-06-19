@@ -25,7 +25,7 @@ struct ContentView: View {
     let model = MarsHabitatPricer()
 
     /// Data source for the picker.
-    let pickerDataSource = PickerDataSource()
+    //let pickerDataSource = PickerDataSource()
 
     /// State variable we want to monitor
     //@State private var feature: Feature

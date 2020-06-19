@@ -16,7 +16,6 @@
 		E63FD102246B2202007F18C1 /* GreenhousesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63FD0FE246B2202007F18C1 /* GreenhousesDataSource.swift */; };
 		E63FD103246B2202007F18C1 /* SizeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63FD0FF246B2202007F18C1 /* SizeDataSource.swift */; };
 		E63FD105246B2202007F18C1 /* SolarPanelDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63FD101246B2202007F18C1 /* SolarPanelDataSource.swift */; };
-		E66F0603249D27BA00C9B323 /* PickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66F0602249D27BA00C9B323 /* PickerViewDataSource.swift */; };
 		E68CEF572470C2C30054E1ED /* MarsHabitatPricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E68CEF562470C2C30054E1ED /* MarsHabitatPricer.mlmodel */; };
 		E6D65E0C246EF8AE00C9AAEE /* Pickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D65E0B246EF8AE00C9AAEE /* Pickers.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		E63FD0FE246B2202007F18C1 /* GreenhousesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenhousesDataSource.swift; sourceTree = "<group>"; };
 		E63FD0FF246B2202007F18C1 /* SizeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeDataSource.swift; sourceTree = "<group>"; };
 		E63FD101246B2202007F18C1 /* SolarPanelDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarPanelDataSource.swift; sourceTree = "<group>"; };
-		E66F0602249D27BA00C9B323 /* PickerViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewDataSource.swift; sourceTree = "<group>"; };
 		E68CEF562470C2C30054E1ED /* MarsHabitatPricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MarsHabitatPricer.mlmodel; sourceTree = "<group>"; };
 		E6D65E0B246EF8AE00C9AAEE /* Pickers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pickers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +91,6 @@
 		E63FD106246B220B007F18C1 /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E66F0602249D27BA00C9B323 /* PickerViewDataSource.swift */,
 				E63FD101246B2202007F18C1 /* SolarPanelDataSource.swift */,
 				E63FD0FE246B2202007F18C1 /* GreenhousesDataSource.swift */,
 				E63FD0FF246B2202007F18C1 /* SizeDataSource.swift */,
@@ -173,7 +170,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63FD0E9246B0BFB007F18C1 /* AppDelegate.swift in Sources */,
-				E66F0603249D27BA00C9B323 /* PickerViewDataSource.swift in Sources */,
 				E63FD105246B2202007F18C1 /* SolarPanelDataSource.swift in Sources */,
 				E63FD103246B2202007F18C1 /* SizeDataSource.swift in Sources */,
 				E63FD0EB246B0BFB007F18C1 /* SceneDelegate.swift in Sources */,
