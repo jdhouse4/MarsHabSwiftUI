@@ -46,7 +46,6 @@ struct ContentView: View {
                     selectedSolarPanelIndex: $solarPanels,
                     selectedGreenhousesIndex: $greenhouses,
                     selectedSizeIndex: $size)
-                //.frame(height: 550)
                 .frame(minHeight: self.pickerMinFrameHeight, maxHeight: self.pickerMaxFrameHeight)
 
             /*
