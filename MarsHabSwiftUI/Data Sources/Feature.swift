@@ -5,7 +5,6 @@ Abstract:
 Enumeration representing the different features for the habitats.
 */
 
-import UIKit
 
 /**
      Represents the different features used by this model. Each feature
