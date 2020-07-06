@@ -7,6 +7,10 @@
 //
 
 import SwiftUI
+import CoreML
+
+
+
 
 struct Pickers: View {
     // MARK: -Properties
@@ -31,7 +35,7 @@ struct Pickers: View {
 
 
     /// The regression data model
-    let model = MarsHabitatPricer()
+    let model = try? MarsHabitatPricer(configuration: MLModelConfiguration())
 
     let pickerNameHeight: CGFloat       = 50
     let pickerFrameHeight: CGFloat      = 180
