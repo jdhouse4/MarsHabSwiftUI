@@ -146,7 +146,7 @@ struct Pickers: View {
         let greenhouses: Double = greenhousesDataSource.value(for: greenhousesIndex)!
         let size: Double = sizeDataSource.value(for: sizeIndex)!
 
-        guard let marsHabitatPricerOutput = try? model.prediction(solarPanels: solarPanels, greenhouses: greenhouses, size: size) else {
+        guard let marsHabitatPricerOutput = try? model!.prediction(solarPanels: solarPanels, greenhouses: greenhouses, size: size) else {
             fatalError("Unexpected runtime error.")
         }
 
