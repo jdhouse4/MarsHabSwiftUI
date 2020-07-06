@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CoreML
 
 struct ContentView: View {
     // MARK: - Properties
@@ -22,7 +23,7 @@ struct ContentView: View {
     let pickerMaxFrameHeight: CGFloat   = 1000
 
     /// The regression data model
-    let model = MarsHabitatPricer()
+    let model = try? MarsHabitatPricer(configuration: MLModelConfiguration())
 
     /// Data source for the picker.
     //let pickerDataSource = PickerDataSource()
