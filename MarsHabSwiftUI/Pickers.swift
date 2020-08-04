@@ -95,6 +95,7 @@ struct Pickers: View {
                         .frame(width: geometry.size.width/3, height:self.pickerFrameHeight, alignment: .center)
                         //.background(Color.green)
                     }
+                    .pickerStyle(InlinePickerStyle())
                     .background(Color.white)
                     
 
