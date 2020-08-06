@@ -73,7 +73,16 @@ struct Pickers: View {
                             }
                         }
                         .frame(width: geometry.size.width/3, height: self.pickerFrameHeight, alignment: .center)
+                        .clipped()
+                        //.border(Color.yellow)
                         //.background(Color.yellow)
+                        .onTapGesture {
+                            print("Show details for Solar Panels")
+                            //print("Global center: \(geometry.frame(in: .global).midX) x \(geometry.frame(in: .global).midY)")
+                            //print("Custom center: \(geometry.frame(in: .named("Custom")).midX) x \(geometry.frame(in: .named("Custom")).midY)")
+                            //print("Local center: \(geometry.frame(in: .local).midX) x \(geometry.frame(in: .local).midY)")
+                        }
+
 
 
                         /// Picer for Greenhouses
@@ -83,7 +92,17 @@ struct Pickers: View {
                             }
                         }
                         .frame(width: geometry.size.width/3, height: self.pickerFrameHeight, alignment: .center)
+                        .clipped()
+                        //.border(Color.red)
                         //.background(Color.red)
+                        //.pickerStyle(InlinePickerStyle())
+                        .onTapGesture {
+                            print("Show details for Greenhouses")
+                            //print("Global center: \(geometry.frame(in: .global).midX) x \(geometry.frame(in: .global).midY)")
+                            //print("Custom center: \(geometry.frame(in: .named("Custom")).midX) x \(geometry.frame(in: .named("Custom")).midY)")
+                            //print("Local center: \(geometry.frame(in: .local).midX) x \(geometry.frame(in: .local).midY)")
+                        }
+
 
 
                         /// Picker for Size
@@ -93,9 +112,13 @@ struct Pickers: View {
                             }
                         }
                         .frame(width: geometry.size.width/3, height:self.pickerFrameHeight, alignment: .center)
+                        .clipped()
                         //.background(Color.green)
+                        .onTapGesture {
+                            print("Show details for Size")
+                        }
                     }
-                    .pickerStyle(InlinePickerStyle())
+                    //.pickerStyle(InlinePickerStyle())
                     .background(Color.white)
                     
 
@@ -106,6 +129,7 @@ struct Pickers: View {
                             //Text("Price: $\(self.updatePredictedPrice(solarPanelIndex: self.selectedSolarPanelIndex, greenhousesIndex: self.selectedGreenhousesIndex, sizeIndex: self.selectedSizeIndex))")
 
                             Text("Predicted Price (millions)")
+                                //.frame(minWidth: .infinity, maxWidth: .infinity, minHeight: 50, maxHeight: 75, alignment: .center)
                                 .font(.title)
                                 .foregroundColor(.white)
 
@@ -117,11 +141,12 @@ struct Pickers: View {
 
                             Spacer(minLength: 10)
                         }
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: self.priceMinFrameHeight, maxHeight: self.priceMaxFrameHeight, alignment: .center)
                     }
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: self.priceMinFrameHeight, maxHeight: self.priceMaxFrameHeight, alignment: .center)
-                    //.frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: self.priceMinFrameHeight, maxHeight: self.priceMaxFrameHeight, alignment: .leading)
                     .background(Color.init(red: self.priceBackgroundColor, green: self.priceBackgroundColor, blue: self.priceBackgroundColor))
                 }
+                .edgesIgnoringSafeArea(.leading)
             }
 
 

@@ -58,7 +58,6 @@ struct ContentView: View {
 
             Spacer(minLength: 50)
         }
-    //.background(Color.orange)
     }
 }
 
