@@ -74,14 +74,7 @@ struct Pickers: View {
                         }
                         .frame(width: geometry.size.width/3, height: self.pickerFrameHeight, alignment: .center)
                         .clipped()
-                        //.border(Color.yellow)
-                        //.background(Color.yellow)
-                        .onTapGesture {
-                            print("Show details for Solar Panels")
-                            //print("Global center: \(geometry.frame(in: .global).midX) x \(geometry.frame(in: .global).midY)")
-                            //print("Custom center: \(geometry.frame(in: .named("Custom")).midX) x \(geometry.frame(in: .named("Custom")).midY)")
-                            //print("Local center: \(geometry.frame(in: .local).midX) x \(geometry.frame(in: .local).midY)")
-                        }
+
 
 
 
@@ -93,17 +86,6 @@ struct Pickers: View {
                         }
                         .frame(width: geometry.size.width/3, height: self.pickerFrameHeight, alignment: .center)
                         .clipped()
-                        //.border(Color.red)
-                        //.background(Color.red)
-                        //.pickerStyle(InlinePickerStyle())
-                        .onTapGesture {
-                            print("Show details for Greenhouses")
-                            //print("Global center: \(geometry.frame(in: .global).midX) x \(geometry.frame(in: .global).midY)")
-                            //print("Custom center: \(geometry.frame(in: .named("Custom")).midX) x \(geometry.frame(in: .named("Custom")).midY)")
-                            //print("Local center: \(geometry.frame(in: .local).midX) x \(geometry.frame(in: .local).midY)")
-                        }
-
-
 
                         /// Picker for Size
                         Picker(selection: self.$selectedSizeIndex, label: Text("")) {
@@ -113,12 +95,8 @@ struct Pickers: View {
                         }
                         .frame(width: geometry.size.width/3, height:self.pickerFrameHeight, alignment: .center)
                         .clipped()
-                        //.background(Color.green)
-                        .onTapGesture {
-                            print("Show details for Size")
-                        }
                     }
-                    //.pickerStyle(InlinePickerStyle())
+                    .pickerStyle(InlinePickerStyle())
                     .background(Color.white)
                     
 
