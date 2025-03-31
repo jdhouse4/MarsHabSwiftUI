@@ -45,8 +45,11 @@ struct Pickers: View {
     let priceBackgroundColor            = 0.375
 
     var body: some View {
+        
         VStack(spacing: 0) {
+            
             GeometryReader { geometry in
+                
                 VStack(spacing: 0) {
 
                     /// Picker labels
@@ -76,8 +79,6 @@ struct Pickers: View {
                         .clipped()
 
 
-
-
                         /// Picer for Greenhouses
                         Picker(selection: self.$selectedGreenhousesIndex, label: Text("")) {
                             ForEach(0 ..< self.greenhousesDataSource.values.count) { index in
@@ -87,6 +88,7 @@ struct Pickers: View {
                         .frame(width: geometry.size.width/3, height: self.pickerFrameHeight, alignment: .center)
                         .clipped()
 
+                        
                         /// Picker for Size
                         Picker(selection: self.$selectedSizeIndex, label: Text("")) {
                             ForEach(0 ..< self.sizeDataSource.values.count) {
